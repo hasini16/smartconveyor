@@ -16,13 +16,13 @@ import io
 import random
 import string
 import os
-
+import dotenv
 # ==========================================
 # 1. CONFIGURATION & DATABASE
 # ==========================================
 
 # Your Supabase Connection URL
-DATABASE_URL = "postgresql://postgres.clgjswrlcwzmdxhhegtk:adhithya365@aws-1-ap-south-1.pooler.supabase.com:6543/postgres"
+DATABASE_URL = os.getenv("DATABASE_URL")   
 
 # CSV File Path
 CSV_FILE = "parcels_10000.csv"
